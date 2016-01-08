@@ -1,0 +1,127 @@
+﻿body {
+    background-image:url('../Images/tire 2.jpg');
+    border-style:solid;
+    border-color: black;
+    border-width:medium;
+    width: 60em;    
+    margin-left: auto;
+    margin-right:auto;
+    height: auto;
+    overflow: auto;
+}
+
+#masterForm{
+    background-color:#2e2e2e;
+    color: white;
+    width: 60em;
+    height: auto;
+    overflow: auto;
+}
+
+#firstName, #lastName, #phoneNum, #email{
+    margin-bottom: .5em;
+}
+
+#ErrorSummary{
+    text-align:left;
+}
+
+#intro{
+    text-align:left;
+    font-size:medium;
+}
+
+#Contact{
+    width: 35%;
+    text-align:right;
+    float:left;
+    padding-left: 1em;
+}
+
+#intro{
+    text-align:left;
+    font-size:medium;
+    padding-left: 1em;
+}
+
+
+#contactTitle{
+    font-size: 20px;
+    font-weight: 600;
+    text-align:left;
+    padding-left: 1em;
+}
+
+
+
+#Location{
+    width: 50%;
+    float:right;
+    margin-top: -6em;
+}
+
+#locationTitle{
+    font-size: 20px;
+    font-weight: 600;
+    text-align:left;
+}
+
+#map{
+    width: 85%;
+}
+
+
+
+#textForServices{
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+#link{
+    color:white;
+}
+#pic{
+    height: 8em;
+    clear:left;
+}
+
+
+#carPhoto, #carPhoto1{
+    width: 30%;
+}
+
+#LoginStatus, #LoginName{
+    float:right;
+    margin-right:1em;
+    margin-bottom:0.5em;
+}
+
+.spn{
+   border:2px  solid orange;
+   font-weight: bold;
+   font-style:italic;
+   padding-left:2em;
+   padding-right:2em;
+   background-color:black;
+}
+
+#table{
+    border:5px solid black;
+    background-color:white;
+    margin-left:5px;
+    color:navy;
+    float:right;
+    margin-right:2em;
+    padding:1em;
+}
+
+#close{
+    color:red;
+}
+
+#p1{
+    color:orange;
+    font-style:oblique;
+    font-size:large;
+    text-decoration:underline;
+}

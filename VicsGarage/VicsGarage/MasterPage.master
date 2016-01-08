@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="CSS/MasterStyle.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="masterForm" runat="server">
+                    
+    <div>
+        <img src="../Images/masterlogo.png" alt="logo"   style="width:650px"/>
+        <asp:SiteMapDataSource ID="SiteMapDataSourceMenu" runat="server"></asp:SiteMapDataSource>
+            <asp:LoginStatus ID="LoginStatus" runat="server" />
+            <asp:LoginName ID="LoginName" runat="server" ForeColor="LightBlue" />
+        <br />
+            <asp:Menu ID="NavMenu" runat="server" DataSourceID="SiteMapDataSourceMenu" 
+                StaticDisplayLevels="6" Orientation="Horizontal" StaticEnableDefaultPopOutImage="false">
+                <StaticMenuItemStyle  Font-Size="1em" HorizontalPadding=".5em"  Font-Bold="true"  Font-Names="Windings 3" Width="6.5em" Height="1.2em" ForeColor="Black" BackColor="Orange" />
+                <StaticSelectedStyle ForeColor="White"  BackColor="Black"/>
+            </asp:Menu>
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
